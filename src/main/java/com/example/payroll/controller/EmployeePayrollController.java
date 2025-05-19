@@ -13,15 +13,31 @@ import java.util.List;
 public class EmployeePayrollController {
 
     @Autowired
-    private IEmployeePayrollService employeeService;
+    private IEmployeePayrollService service;
 
     @PostMapping
-    public Employee createEmployee(@RequestBody EmployeeDTO employeeDTO) {
-        return employeeService.addEmployee(employeeDTO);
+    public Employee createEmployee(@RequestBody EmployeeDTO dto) {
+        return service.addEmployee(dto);
     }
 
     @GetMapping
     public List<Employee> getAllEmployees() {
-        return employeeService.getEmployeeList();
+        return service.getAllEmployees();
+    }
+
+    @GetMapping("/{id}")
+    public Employee getEmployee(@PathVariable int id) {
+        return service.getEmployeeById(id).orElseThrow(() -> new RuntimeException("Employee not found"));
+    }
+
+    @PutMapping("/{id}")
+    public Employee updateEmployee(@PathVariable int id, @RequestBody EmployeeDTO dto) {
+        return service.updateEmployee(id, dto);
+    }
+
+    @DeleteMapping("/{id}")
+    public String deleteEmployee(@PathVariable int id) {
+        service.deleteEmployee(id);
+        return "Deleted Employee with id: " + id;
     }
 }
