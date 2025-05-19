@@ -1,28 +1,27 @@
 package com.example.payroll.controller;
 
+import com.example.payroll.dto.EmployeeDTO;
+import com.example.payroll.model.Employee;
+import com.example.payroll.service.IEmployeePayrollService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/employee")
 public class EmployeePayrollController {
 
-    @GetMapping
-    public String getEmployee() {
-        return "GET - Fetch Employee Payroll";
-    }
+    @Autowired
+    private IEmployeePayrollService employeeService;
 
     @PostMapping
-    public String createEmployee() {
-        return "POST - Create Employee Payroll";
+    public Employee createEmployee(@RequestBody EmployeeDTO employeeDTO) {
+        return employeeService.addEmployee(employeeDTO);
     }
 
-    @PutMapping
-    public String updateEmployee() {
-        return "PUT - Update Employee Payroll";
-    }
-
-    @DeleteMapping
-    public String deleteEmployee() {
-        return "DELETE - Delete Employee Payroll";
+    @GetMapping
+    public List<Employee> getAllEmployees() {
+        return employeeService.getEmployeeList();
     }
 }
