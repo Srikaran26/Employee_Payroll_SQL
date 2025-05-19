@@ -1,10 +1,6 @@
 package com.example.payroll.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "employee_payroll")
@@ -19,8 +15,7 @@ public class Employee {
 
     public Employee() {}
 
-    public Employee(int id, String name, double salary) {
-        this.id = id;
+    public Employee(String name, double salary) {
         this.name = name;
         this.salary = salary;
     }
