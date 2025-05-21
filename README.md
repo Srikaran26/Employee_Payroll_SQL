@@ -9,9 +9,6 @@ This is an extended version of the Employee Payroll project using MySQL as the b
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Database Configuration](#database-configuration)
-- [API Endpoints](#api-endpoints)
-- [How to Run](#how-to-run)
-- [Next Steps](#next-steps)
 
 ## Overview
 
