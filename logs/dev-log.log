@@ -124,3 +124,40 @@
 2025-05-23T17:42:02.244+05:30  INFO 18744 --- [PayrollSQL] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-05-23T17:42:02.246+05:30  INFO 18744 --- [PayrollSQL] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-05-23T17:42:02.251+05:30  INFO 18744 --- [PayrollSQL] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-24T11:12:27.641+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] c.example.payroll.PayrollSqlApplication  : Starting PayrollSqlApplication using Java 22.0.2 with PID 9868 (C:\Users\Sriii\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PayrollSQL\target\classes started by Sriii in C:\Users\Sriii\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PayrollSQL)
+2025-05-24T11:12:27.645+05:30 DEBUG 9868 --- [PayrollSQL] [restartedMain] c.example.payroll.PayrollSqlApplication  : Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-24T11:12:27.647+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] c.example.payroll.PayrollSqlApplication  : The following 1 profile is active: "dev"
+2025-05-24T11:12:27.940+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24T11:12:27.954+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-05-24T11:12:28.066+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-24T11:12:28.069+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-24T11:12:28.069+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24T11:12:28.082+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-24T11:12:28.082+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 430 ms
+2025-05-24T11:12:28.116+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24T11:12:28.120+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-24T11:12:28.131+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24T11:12:28.131+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-24T11:12:28.151+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e5e4d42
+2025-05-24T11:12:28.151+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-24T11:12:28.152+05:30  WARN 9868 --- [PayrollSQL] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24T11:12:28.152+05:30  WARN 9868 --- [PayrollSQL] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-24T11:12:28.152+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24T11:12:28.187+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24T11:12:28.228+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24T11:12:28.323+05:30  WARN 9868 --- [PayrollSQL] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24T11:12:28.478+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/payroll'
+2025-05-24T11:12:28.502+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-24T11:12:28.511+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-24T11:12:28.515+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] c.example.payroll.PayrollSqlApplication  : Started PayrollSqlApplication in 0.943 seconds (process running for 968.76)
+2025-05-24T11:12:28.516+05:30  INFO 9868 --- [PayrollSQL] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-24T12:37:01.899+05:30  INFO 9868 --- [PayrollSQL] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24T12:37:01.899+05:30  INFO 9868 --- [PayrollSQL] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-24T12:37:01.899+05:30  INFO 9868 --- [PayrollSQL] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
